@@ -7,7 +7,7 @@ const Hero = () => {
         <p className="text-center text-lg md:text-2xl px-3">
           welcome to sample
         </p>
-        <p className="text-center text-3xl md:text-6xl px-3 leading-10  uppercase">
+        <p className="text-center text-yellow-500 text-3xl md:text-6xl px-3 leading-10  uppercase">
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <p className="text-center text-lg md:text-3xl px-5">

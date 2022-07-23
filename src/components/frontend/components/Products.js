@@ -6,18 +6,33 @@ function Products() {
   const data = [
     {
       id: "1",
-      title: "Bougainvillea by OPL",
-      img: "https://imageio.forbes.com/blogs-images/trevornace/files/2015/11/jeremejevite-1200x1068.jpg?height=632&width=711&fit=bounds",
+      title: "Calcium Carbonate Powder CaCO3 DD- A12",
+      img: "http://www.gimexcomineral.com/images/1534499380-3.jpg",
     },
     {
       id: "2",
-      title: "Lake House by OPL",
-      img: "https://www.thepearlsource.com/blog/wp-content/uploads/2018/05/black-opal.jpg",
+      title: "Calcium Carbonate Powder CaCO3 DD- A15",
+      img: "http://www.gimexcomineral.com/images/1534499541-4.jpg",
     },
     {
       id: "3",
-      title: "Tulip by OPL",
-      img: "https://images.squarespace-cdn.com/content/v1/545b0f35e4b08b58f1cd0145/1588836097724-DFRKWFJFS1O9LSITPA26/emerald.jpg?format=1000w",
+      title: "Dolomite Stone",
+      img: "http://www.gimexcomineral.com/images/1530547187-dolomite-stone.png",
+    },
+    {
+      id: "5",
+      title: "Calcium Carbonate Powder CaCO3 DD- A12",
+      img: "http://www.gimexcomineral.com/images/1534499380-3.jpg",
+    },
+    {
+      id: "6",
+      title: "Dolomite Stone",
+      img: "http://www.gimexcomineral.com/images/1530547187-dolomite-stone.png",
+    },
+    {
+      id: "4",
+      title: "Calcium Carbonate Powder CaCO3 DD- A15",
+      img: "http://www.gimexcomineral.com/images/1534499541-4.jpg",
     },
   ];
   return (
@@ -42,10 +57,10 @@ function Products() {
                   src={item.img}
                   alt=""
                 />
-                <div className="description-bk lg:w-[120%] xl:w-[110%]"></div>
+                <div className="description-bk lg:w-[110%]"></div>
 
-                <div className="w-full absolute bottom-5 text-slate-100 px-5">
-                  <p className="mb-2 text-xl text-center xl:text-2xl font-semibold">
+                <div className="w-11/12 absolute bottom-5 text-slate-100 px-5">
+                  <p className="mb-2 text-base text-center xl:text-lg font-semibold">
                     {item.title}
                   </p>
                   <p className="mb-4">{item.details}</p>

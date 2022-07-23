@@ -40,19 +40,19 @@
 
 .description-bk {
   background-image: linear-gradient(0deg, #ba2827, #f43a5f);
-  border-radius: 50%;
+  border-radius: 30%;
   position: absolute;
   top: 62%;
   left: -5px;
   height: 75%;
   width: 108%;
-  transform: skew(19deg, -12deg);
-  -webkit-transform: skew(19deg, -12deg);
-  -moz-transform: skew(19deg, -12deg);
-  -ms-transform: skew(19deg, -12deg);
-  -o-transform: skew(19deg, -12deg);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  transform: skew(45deg, -12deg);
+  -webkit-transform: skew(45deg, -12deg);
+  -moz-transform: skew(45deg, -12deg);
+  -ms-transform: skew(45deg, -12deg);
+  -o-transform: skew(45deg, -12deg);
+  -webkit-border-radius: 30%;
+  -moz-border-radius: 30%;
+  -ms-border-radius: 30%;
+  -o-border-radius: 30%;
 }

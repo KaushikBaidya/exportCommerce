@@ -5,8 +5,8 @@ function Service() {
   const { t } = useTranslation(["service"]);
   return (
     <>
-      <section className="border-b py-20 min-h-screen">
-        <div className="w-full mx-auto h-72 bg-[url('https://images.unsplash.com/photo-1648160669303-c8e1c3f76bd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjU2fHxidWlsZGluZyUyMGNvbnN0cnVjdGlvbnxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60')] bg-cover">
+      <section className="border-b py-12 min-h-screen">
+        <div className="w-full mx-auto h-72 bg-bgBanner bg-cover">
           <h1 className="text-4xl font-bold text-yellow-500 sm:mt-4 lg:text-6xl text-center px-5 py-20">
             {t("service")}
           </h1>
