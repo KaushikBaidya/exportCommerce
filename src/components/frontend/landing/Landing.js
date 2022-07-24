@@ -1,4 +1,6 @@
 import React from "react";
+import Blogs from "../components/Blogs";
+import Contact from "../components/Contact";
 import Hero from "../components/Hero";
 import Landmark from "../components/Landmark";
 import Map from "../components/Map";
@@ -10,6 +12,8 @@ function Landing() {
       <Hero />
       <Landmark />
       <Products />
+      <Blogs />
+      <Contact />
       <Map />
     </div>
   );

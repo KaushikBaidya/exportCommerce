@@ -4,7 +4,7 @@ import React from "react";
 function Landmark() {
   // const { t } = useTranslation(["landmark"]);
   return (
-    <section className="border-b py-20 h-full">
+    <section id="seeAbout" className="border-b py-20 h-full">
       <div className="grid grid-cols-1 md:grid-cols-2 px-6 gap-x-6 items-center">
         <div>
           <img

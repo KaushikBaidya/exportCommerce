@@ -52,33 +52,33 @@ export default function Navbar({ fixed }) {
         >
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
             <li className="px-4 border-transparent border-b-4 hover:border-yellow-500 py-2 text-md font-medium uppercase">
-              <Link to="/" onClick={() => setNavbarOpen(!navbarOpen)}>
-                {t("home")}
-              </Link>
+              <a href="#seeHome" onClick={() => setNavbarOpen(!navbarOpen)}>
+                HOME
+              </a>
             </li>
             <li className="px-4 border-transparent border-b-4 hover:border-yellow-500 py-2 text-md font-medium uppercase">
-              <Link to="/about" onClick={() => setNavbarOpen(!navbarOpen)}>
-                {t("about")}
-              </Link>
+              <a href="#seeAbout" onClick={() => setNavbarOpen(!navbarOpen)}>
+                ABOUT
+              </a>
             </li>
             <li className="px-4 border-transparent border-b-4 hover:border-yellow-500 py-2 text-md font-medium uppercase">
-              <Link to="/project" onClick={() => setNavbarOpen(!navbarOpen)}>
-                Products
-              </Link>
+              <a href="#seeProduct" onClick={() => setNavbarOpen(!navbarOpen)}>
+                PRODUCTS
+              </a>
             </li>
             <li className="px-4 border-transparent border-b-4 hover:border-yellow-500 py-2 text-md font-medium uppercase">
-              <Link to="/service" onClick={() => setNavbarOpen(!navbarOpen)}>
-                {t("services")}
-              </Link>
+              <a href="#seeBlog" onClick={() => setNavbarOpen(!navbarOpen)}>
+                BLOGS
+              </a>
             </li>
             <li className="px-4 border-transparent border-b-4 hover:border-yellow-500 py-2 text-md font-medium uppercase">
-              <Link to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>
-                {t("contact")}
-              </Link>
+              <a href="#seeContact" onClick={() => setNavbarOpen(!navbarOpen)}>
+                CONTACT
+              </a>
             </li>
-            <li onClick={() => setNavbarOpen(!navbarOpen)}>
+            {/* <li onClick={() => setNavbarOpen(!navbarOpen)}>
               <Language />
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
