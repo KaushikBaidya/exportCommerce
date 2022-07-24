@@ -6,38 +6,32 @@ function Products() {
   const data = [
     {
       id: "1",
-      title: "Calcium Carbonate Powder CaCO3 DD- A12",
-      img: "http://www.gimexcomineral.com/images/1534499380-3.jpg",
+      title: "Biomass Wood Pellet",
+      price: "$12/ Kilogram",
+      img: "https://5.imimg.com/data5/HN/BH/ZC/SELLER-48250724/clean-solid-bio-fuel-wood-pellet-250x250.jpg",
     },
     {
       id: "2",
-      title: "Calcium Carbonate Powder CaCO3 DD- A15",
-      img: "http://www.gimexcomineral.com/images/1534499541-4.jpg",
+      title: "Biomass Wood Pellet",
+      price: "$12/ Kilogram",
+      img: "https://5.imimg.com/data5/HN/BH/ZC/SELLER-48250724/clean-solid-bio-fuel-wood-pellet-250x250.jpg",
     },
     {
       id: "3",
-      title: "Dolomite Stone",
-      img: "http://www.gimexcomineral.com/images/1530547187-dolomite-stone.png",
+      title: "Biomass Wood Pellet",
+      price: "$12/ Kilogram",
+      img: "https://5.imimg.com/data5/HN/BH/ZC/SELLER-48250724/clean-solid-bio-fuel-wood-pellet-250x250.jpg",
     },
     {
       id: "5",
-      title: "Calcium Carbonate Powder CaCO3 DD- A12",
-      img: "http://www.gimexcomineral.com/images/1534499380-3.jpg",
-    },
-    {
-      id: "6",
-      title: "Dolomite Stone",
-      img: "http://www.gimexcomineral.com/images/1530547187-dolomite-stone.png",
-    },
-    {
-      id: "4",
-      title: "Calcium Carbonate Powder CaCO3 DD- A15",
-      img: "http://www.gimexcomineral.com/images/1534499541-4.jpg",
+      title: "Biomass Wood Pellet",
+      price: "$12/ Kilogram",
+      img: "https://5.imimg.com/data5/HN/BH/ZC/SELLER-48250724/clean-solid-bio-fuel-wood-pellet-250x250.jpg",
     },
   ];
   return (
     <>
-      <section className="border-b min-h-full">
+      <section className="border-b min-h-full bg-gray-100">
         <div
           id="seeProduct"
           className="mx-auto grid grid-cols-1 gap-10 lg:px-14 py-14 text-dark"
@@ -46,33 +40,53 @@ function Products() {
             Our Products
           </div>
 
-          <div className="px-5 lg:px-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="px-5 lg:px-14 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {data.map((item) => (
               <div
                 key={item.id}
-                className="inline-block relative w-full h-[400px] lg:h-[500] overflow-hidden shadow-md mr-2 lg:mr-5  rounded-lg"
+                className=" w-full grid content-center justify-items-center"
               >
-                <img
-                  className="h-[85%] w-full rounded-lg"
-                  src={item.img}
-                  alt=""
-                />
-                <div className="description-bk lg:w-[110%]"></div>
-
-                <div className="w-11/12 absolute bottom-5 text-slate-100 px-5">
-                  <p className="mb-2 text-base text-center xl:text-lg font-semibold">
-                    {item.title}
-                  </p>
-                  <p className="mb-4">{item.details}</p>
-
-                  <p className="text-right text-lg">
-                    <a href="#a" className="font-semibold border-b-2">
-                      BUY NOW
-                    </a>
-                  </p>
+                <img src={item.img} className="w-80" alt="" />
+                <div>
+                  <h1 className="text-base font-semibold">{item.title}</h1>
+                  <p className="text-base font-semibold">{item.price}</p>
                 </div>
+                <button
+                  className="px-3 py-2 bg-red-600 m-2 text-white text-sm"
+                  type=""
+                >
+                  BUY NOW
+                </button>
               </div>
             ))}
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 px-4 content-center justify-items-center gap-x-2">
+            <div className="w-full min-h-20 grid grid-cols-2 content-center justify-items-center bg-yellow-200 rounded-lg mt-2">
+              <div>
+                <img
+                  src="https://fireplaceuniverse.com/wp-content/uploads/pellet-stove-pellets-burning.jpg"
+                  className="rounded-lg w-5/6 p-5 mx-auto"
+                  alt=""
+                />
+              </div>
+              <div className="text-black grid content-center justify-items-center gap-y-2 mt-2 md:mt-0">
+                <h1 className="text-base font-semibold">Biomass Wood Pellet</h1>
+                <p className="text-base font-semibold">$12/ Kilogram</p>
+              </div>
+            </div>
+            <div className="w-full min-h-20 grid grid-cols-2 content-center justify-items-center bg-blue-200 rounded-lg mt-2">
+              <div>
+                <img
+                  src="https://fireplaceuniverse.com/wp-content/uploads/pellet-stove-pellets-burning.jpg"
+                  className="rounded-lg w-5/6 p-5 mx-auto"
+                  alt=""
+                />
+              </div>
+              <div className="text-black grid content-center justify-items-center gap-y-2 mt-2 md:mt-0">
+                <h1 className="text-base font-semibold">Biomass Wood Pellet</h1>
+                <p className="text-base font-semibold">$12/ Kilogram</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

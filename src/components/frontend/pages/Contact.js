@@ -28,9 +28,9 @@ function Contact() {
   };
   return (
     <>
-      <section className="border-b py-20 min-h-screen">
-        <div className="w-full mx-auto h-72 bg-[url('https://images.unsplash.com/photo-1622649396178-b56dfd532226?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=910&q=80')] bg-cover">
-          <h1 className="text-4xl font-bold text-white sm:mt-4 lg:text-6xl text-center px-5 py-20">
+      <section className="border-b py-12 min-h-screen">
+        <div className="w-full mx-auto h-72 bg-bgBanner bg-cover">
+          <h1 className="text-4xl font-bold text-yellow-500 sm:mt-4 lg:text-6xl text-center px-5 py-20">
             {t("title")}
           </h1>
         </div>
@@ -60,7 +60,7 @@ function Contact() {
               name="message"
               placeholder={t("your-message")}
             />
-            <button className="button" type="submit">
+            <button className="button hover:bg-red-600" type="submit">
               {t("button")}
             </button>
 

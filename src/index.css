@@ -14,7 +14,7 @@
 
 .textarea {
   width: 100%;
-  height: 120px;
+  /* height: 120px; */
   border: none;
   border-bottom: 1px solid rgb(100, 100, 100);
   margin: 10px 0px;
@@ -27,7 +27,7 @@
   width: 100%;
   padding: 10px 20px;
   color: aliceblue;
-  background-color: #f57213;
+  background-color: #bf2d2d;
   font-size: 16px;
   border: none;
   border-radius: 5px;

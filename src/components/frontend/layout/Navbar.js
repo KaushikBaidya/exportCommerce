@@ -5,15 +5,35 @@ import { useTranslation } from "react-i18next";
 import Language from "./Language";
 
 export default function Navbar({ fixed }) {
-  const { t } = useTranslation(["common"]);
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const [bgColor, setBgColor] = useState(false);
+
+  const changeColor = () => {
+    if (window.scrollY >= 70) {
+      setBgColor(true);
+    } else {
+      setBgColor(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeColor);
+
+  const { t } = useTranslation(["common"]);
+
   return (
     <>
-      <div className="fixed w-full xl:max-w-screen-3xl mx-auto flex flex-wrap items-center justify-between z-10 bg-[#bd2727f8] py-2 shadow-md">
+      <div
+        className={
+          "fixed w-full xl:max-w-screen-3xl mx-auto flex flex-wrap items-center justify-between z-10 py-2 " +
+          (bgColor
+            ? "bg-[#f42525f5] text-white shadow-md"
+            : "bg-red-600 lg:bg-transparent ")
+        }
+      >
         <div className="w-full flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <Link to="/">
             <div>
-              <img src="/images/logo.png" alt="" className="h-10" />
+              <img src="/images/logo.png" alt="" className="h-14 ml-5" />
             </div>
           </Link>
           <button
@@ -31,27 +51,27 @@ export default function Navbar({ fixed }) {
           id="example-navbar-danger"
         >
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-            <li className="px-4 text-white border-transparent border-b-4 hover:border-yellow-500 hover:text-white py-2 text-md font-medium uppercase">
+            <li className="px-4 border-transparent border-b-4 hover:border-yellow-500 py-2 text-md font-medium uppercase">
               <Link to="/" onClick={() => setNavbarOpen(!navbarOpen)}>
                 {t("home")}
               </Link>
             </li>
-            <li className="px-4 text-white border-transparent border-b-4 hover:border-yellow-500 hover:text-white py-2 text-md font-medium uppercase">
+            <li className="px-4 border-transparent border-b-4 hover:border-yellow-500 py-2 text-md font-medium uppercase">
               <Link to="/about" onClick={() => setNavbarOpen(!navbarOpen)}>
                 {t("about")}
               </Link>
             </li>
-            <li className="px-4 text-white border-transparent border-b-4 hover:border-yellow-500 hover:text-white py-2 text-md font-medium uppercase">
+            <li className="px-4 border-transparent border-b-4 hover:border-yellow-500 py-2 text-md font-medium uppercase">
               <Link to="/project" onClick={() => setNavbarOpen(!navbarOpen)}>
                 Products
               </Link>
             </li>
-            <li className="px-4 text-white border-transparent border-b-4 hover:border-yellow-500 hover:text-white py-2 text-md font-medium uppercase">
+            <li className="px-4 border-transparent border-b-4 hover:border-yellow-500 py-2 text-md font-medium uppercase">
               <Link to="/service" onClick={() => setNavbarOpen(!navbarOpen)}>
                 {t("services")}
               </Link>
             </li>
-            <li className="px-4 text-white border-transparent border-b-4 hover:border-yellow-500 hover:text-white py-2 text-md font-medium uppercase">
+            <li className="px-4 border-transparent border-b-4 hover:border-yellow-500 py-2 text-md font-medium uppercase">
               <Link to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>
                 {t("contact")}
               </Link>
