@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 // import { AiOutlineRest } from "react-icons/ai";
 import { Dialog, Transition } from "@headlessui/react";
-import Form from "./frontend/components/Form";
+import Form from "./Form";
 // import toast from "react-hot-toast";
 
 const Buynow = ({ title }) => {
