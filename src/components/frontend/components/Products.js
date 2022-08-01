@@ -1,4 +1,5 @@
 import React from "react";
+import Buynow from "../../Buynow";
 // import { useTranslation } from "react-i18next";
 
 function Products() {
@@ -79,7 +80,7 @@ function Products() {
                   className="px-3 py-2 bg-[#201A59] m-2 text-white text-sm"
                   type=""
                 >
-                  BUY NOW
+                  <Buynow title={item.title} />
                 </button>
               </div>
             ))}
