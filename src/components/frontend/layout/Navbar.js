@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 // import { useTranslation } from "react-i18next";
@@ -8,15 +8,16 @@ export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [bgColor, setBgColor] = useState(false);
 
-  const changeColor = () => {
-    if (window.scrollY >= 70) {
-      setBgColor(true);
-    } else {
-      setBgColor(false);
-    }
-  };
-
-  window.addEventListener("scroll", changeColor);
+  useEffect(() => {
+    const changeColor = () => {
+      if (window.scrollY >= 70) {
+        setBgColor(true);
+      } else {
+        setBgColor(false);
+      }
+    };
+    window.addEventListener("scroll", changeColor);
+  }, []);
 
   // const { t } = useTranslation(["common"]);
 
