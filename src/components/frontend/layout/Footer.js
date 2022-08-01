@@ -88,9 +88,7 @@ const Footer = () => {
       <div className="text-center pb-16 md:pb-0 bg-[#201A59] py-1">
         <p className="text-uppercase font-bold text-gray-200">
           ©{new Date().getFullYear()}
-          <span className="ml-2">
-            ZAJ EDUCATION GROUP LTD All rights reserved
-          </span>
+          <span className="ml-2">TVC Trading Company All rights reserved</span>
         </p>
         <p className="text-uppercase text-gray-200">
           Developed By

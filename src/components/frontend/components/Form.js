@@ -28,7 +28,12 @@ const Form = ({ title = "" }) => {
   };
   return (
     <form className="mt-10" ref={form} onSubmit={send}>
-      {title && <input type="hidden" name="product_title" value={title} />}
+      {title && (
+        <div>
+          <label>{title}</label>
+          <input type="hidden" name="product_title" value={title} />
+        </div>
+      )}
       <input
         className="input"
         type="text"

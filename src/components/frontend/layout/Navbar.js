@@ -27,7 +27,7 @@ export default function Navbar({ fixed }) {
           "fixed w-full xl:max-w-screen-3xl mx-auto flex flex-wrap items-center justify-between z-10 py-2 " +
           (bgColor
             ? "bg-[#ffffffef] backdrop-blur-sm text-black shadow-sm"
-            : "bg-red-600 lg:bg-transparent ")
+            : "bg-[#ffffffef] backdrop-blur-sm lg:bg-transparent ")
         }
       >
         <div className="w-full flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
