@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
-import Language from "./Language";
+// import { useTranslation } from "react-i18next";
+// import Language from "./Language";
 
 export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -18,7 +18,7 @@ export default function Navbar({ fixed }) {
 
   window.addEventListener("scroll", changeColor);
 
-  const { t } = useTranslation(["common"]);
+  // const { t } = useTranslation(["common"]);
 
   return (
     <>
@@ -26,7 +26,7 @@ export default function Navbar({ fixed }) {
         className={
           "fixed w-full xl:max-w-screen-3xl mx-auto flex flex-wrap items-center justify-between z-10 py-2 " +
           (bgColor
-            ? "bg-[#f42525f5] text-white shadow-md"
+            ? "bg-[#ffffffef] backdrop-blur-sm text-black shadow-sm"
             : "bg-red-600 lg:bg-transparent ")
         }
       >
@@ -51,27 +51,27 @@ export default function Navbar({ fixed }) {
           id="example-navbar-danger"
         >
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-            <li className="px-4 border-transparent border-b-4 hover:border-yellow-500 py-2 text-md font-medium uppercase">
+            <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
               <a href="#seeHome" onClick={() => setNavbarOpen(!navbarOpen)}>
                 HOME
               </a>
             </li>
-            <li className="px-4 border-transparent border-b-4 hover:border-yellow-500 py-2 text-md font-medium uppercase">
+            <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
               <a href="#seeAbout" onClick={() => setNavbarOpen(!navbarOpen)}>
                 ABOUT
               </a>
             </li>
-            <li className="px-4 border-transparent border-b-4 hover:border-yellow-500 py-2 text-md font-medium uppercase">
+            <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
               <a href="#seeProduct" onClick={() => setNavbarOpen(!navbarOpen)}>
                 PRODUCTS
               </a>
             </li>
-            <li className="px-4 border-transparent border-b-4 hover:border-yellow-500 py-2 text-md font-medium uppercase">
+            <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
               <a href="#seeBlog" onClick={() => setNavbarOpen(!navbarOpen)}>
                 BLOGS
               </a>
             </li>
-            <li className="px-4 border-transparent border-b-4 hover:border-yellow-500 py-2 text-md font-medium uppercase">
+            <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
               <a href="#seeContact" onClick={() => setNavbarOpen(!navbarOpen)}>
                 CONTACT
               </a>

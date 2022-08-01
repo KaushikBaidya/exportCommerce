@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 text-left gap-y-10">
           <p className="text-lg md:text-4xl px-3">
             Welcome to{" "}
-            <span className="text-left text-red-600 font-bold uppercase">
+            <span className="text-left text-[#ED1A37] font-bold uppercase">
               tvc trading company
             </span>
           </p>
@@ -21,9 +21,16 @@ const Hero = () => {
           <p className="text-left text-lg px-3">
             sed do eiusmod tempor incididunt ut labore et dol.
           </p>
-          <button className="w-2/4 transition ease-in-out delay-150 bg-red-500 hover:-translate-y-1 hover:scale-110 hover:bg-red-600 duration-300 px-5 py-2 ml-3">
-            Contact Us
-          </button>
+          {/* <button
+            class="btn2 w-96 mt-4 px-10 py-5 relative border border-red-500 uppercase font-semibold tracking-wider leading-none overflow-hidden hover:text-white"
+            type="button"
+          >
+            <span class="absolute inset-0 bg-red-500"></span>
+            <span class="absolute inset-0 flex justify-center items-center font-bold">
+              Learn More
+            </span>
+            Learn More
+          </button> */}
         </div>
         <div className="w-full grid grid-cols-1 content-center justify-items-center p-5">
           <img

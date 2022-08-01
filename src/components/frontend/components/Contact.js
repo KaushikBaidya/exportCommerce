@@ -11,10 +11,10 @@ function Contact() {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_fqk7rmjf",
-        "template_vm309r1f",
+        "service_fqkds7rmjf",
+        "template_vm30dsd9r1f",
         form.current,
-        "2BDbTiYm0NQIRtv7Of"
+        "2BDbTiYm0NQIsddRtv7Of"
       )
       .then(
         (result) => {
@@ -29,7 +29,7 @@ function Contact() {
   return (
     <>
       <section id="seeContact" className="border-b py-20 bg-gray-100 h-full">
-        <div className="text-center font-semibold text-4xl text-red-700">
+        <div className="text-center font-semibold text-4xl text-[#ED1A37]">
           Contact Us
         </div>
         <div className="container max-w-4xl mx-auto overflow-hidden flex flex-col px-5">
@@ -58,7 +58,7 @@ function Contact() {
               name="message"
               placeholder={t("your-message")}
             />
-            <button className="button hover:bg-red-600" type="">
+            <button className="button hover:bg-[#201A59]" type="">
               {t("button")}
             </button>
 

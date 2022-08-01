@@ -27,13 +27,30 @@
   width: 100%;
   padding: 10px 20px;
   color: aliceblue;
-  background-color: #bf2d2d;
+  background-color: #352b8e;
   font-size: 16px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
+.btn2 span:first-child {
+  transform: translateX(-101%);
+  transition: transform 0.3s ease-in;
+}
+.btn2:hover span {
+  transform: translateX(0);
+}
+
 .hight-half {
   height: 50vh;
 }
+
+/* .custom {
+  border-color: linear-gradient(
+    0deg,
+    rgba(46, 23, 84, 1) 0%,
+    rgba(250, 15, 15, 1) 50%,
+    rgba(246, 228, 15, 1) 100%
+  );
+} */

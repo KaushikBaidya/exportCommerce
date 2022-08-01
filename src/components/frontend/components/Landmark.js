@@ -16,7 +16,7 @@ function Landmark() {
         <div className="text-black grid md:text-xl gap-y-5 mt-2 md:mt-0">
           <h1 className="font-bold text-xl md:text-xl lg:text-4xl font-mono text-center">
             About{" "}
-            <span className="md:text-2xl lg:text-5xl text-red-600">TVC</span>
+            <span className="md:text-2xl lg:text-5xl text-[#ED1A37]">TVC</span>
           </h1>
           <p className="text-left">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

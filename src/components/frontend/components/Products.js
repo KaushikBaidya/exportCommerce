@@ -60,7 +60,7 @@ function Products() {
           id="seeProduct"
           className="mx-auto grid grid-cols-1 gap-10 lg:px-14 py-20 text-dark"
         >
-          <div className="text-center font-semibold text-4xl text-red-700">
+          <div className="text-center font-semibold text-4xl text-[#ED1A37]">
             Our Products
           </div>
 
@@ -76,7 +76,7 @@ function Products() {
                   <p className="text-base font-semibold">{item.price}</p>
                 </div>
                 <button
-                  className="px-3 py-2 bg-red-600 m-2 text-white text-sm"
+                  className="px-3 py-2 bg-[#201A59] m-2 text-white text-sm"
                   type=""
                 >
                   BUY NOW
