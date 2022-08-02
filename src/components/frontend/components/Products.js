@@ -1,59 +1,13 @@
 import React from "react";
 import Buynow from "../../Buynow";
+import data from "../../../Data/Data";
+
+import { Link } from "react-router-dom";
 // import { useTranslation } from "react-i18next";
 
 function Products() {
   // const { t } = useTranslation(["project"]);
-  const data = [
-    {
-      id: "1",
-      title: "Biomass Wood Pellet 1",
-      price: "$12/ Kilogram",
-      img: "https://5.imimg.com/data5/HN/BH/ZC/SELLER-48250724/clean-solid-bio-fuel-wood-pellet-250x250.jpg",
-    },
-    {
-      id: "2",
-      title: "Biomass Wood Pellet 2",
-      price: "$12/ Kilogram",
-      img: "https://5.imimg.com/data5/HN/BH/ZC/SELLER-48250724/clean-solid-bio-fuel-wood-pellet-250x250.jpg",
-    },
-    {
-      id: "3",
-      title: "Biomass Wood Pellet 3",
-      price: "$12/ Kilogram",
-      img: "https://5.imimg.com/data5/HN/BH/ZC/SELLER-48250724/clean-solid-bio-fuel-wood-pellet-250x250.jpg",
-    },
-    {
-      id: "4",
-      title: "Biomass Wood Pellet 4",
-      price: "$12/ Kilogram",
-      img: "https://5.imimg.com/data5/HN/BH/ZC/SELLER-48250724/clean-solid-bio-fuel-wood-pellet-250x250.jpg",
-    },
-    {
-      id: "5",
-      title: "Biomass Wood Pellet 5",
-      price: "$12/ Kilogram",
-      img: "https://5.imimg.com/data5/HN/BH/ZC/SELLER-48250724/clean-solid-bio-fuel-wood-pellet-250x250.jpg",
-    },
-    {
-      id: "6",
-      title: "Biomass Wood Pellet 6",
-      price: "$12/ Kilogram",
-      img: "https://5.imimg.com/data5/HN/BH/ZC/SELLER-48250724/clean-solid-bio-fuel-wood-pellet-250x250.jpg",
-    },
-    {
-      id: "7",
-      title: "Biomass Wood Pellet 7",
-      price: "$12/ Kilogram",
-      img: "https://5.imimg.com/data5/HN/BH/ZC/SELLER-48250724/clean-solid-bio-fuel-wood-pellet-250x250.jpg",
-    },
-    {
-      id: "8",
-      title: "Biomass Wood Pellet 8",
-      price: "$12/ Kilogram",
-      img: "https://5.imimg.com/data5/HN/BH/ZC/SELLER-48250724/clean-solid-bio-fuel-wood-pellet-250x250.jpg",
-    },
-  ];
+
   return (
     <>
       <section id="seeProduct" className="border-b min-h-full bg-gray-100">
@@ -71,11 +25,13 @@ function Products() {
                 key={item.id}
                 className=" w-full grid content-center justify-items-center"
               >
-                <img src={item.img} className="w-80" alt="" />
+                <img src={item.img} className="h-72" alt="" />
                 <div className="mt-2">
-                  <h1 className="text-base text-center font-semibold">
-                    {item.title}
-                  </h1>
+                  <Link to={item.id}>
+                    <h1 className="text-base text-center font-semibold text-blue-600">
+                      {item.title}
+                    </h1>
+                  </Link>
                   <p className="text-base text-center font-semibold">
                     {item.price}
                   </p>

@@ -58,12 +58,12 @@ export default function Navbar({ fixed }) {
               </a>
             </li>
             <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
-              <a href="#seeAbout" onClick={() => setNavbarOpen(!navbarOpen)}>
+              <a href="/#seeAbout" onClick={() => setNavbarOpen(!navbarOpen)}>
                 ABOUT
               </a>
             </li>
             <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
-              <a href="#seeProduct" onClick={() => setNavbarOpen(!navbarOpen)}>
+              <a href="/#seeProduct" onClick={() => setNavbarOpen(!navbarOpen)}>
                 PRODUCTS
               </a>
             </li>
