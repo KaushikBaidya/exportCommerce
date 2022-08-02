@@ -53,7 +53,7 @@ export default function Navbar({ fixed }) {
         >
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
             <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
-              <a href="#seeHome" onClick={() => setNavbarOpen(!navbarOpen)}>
+              <a href="/#seeHome" onClick={() => setNavbarOpen(!navbarOpen)}>
                 HOME
               </a>
             </li>
@@ -68,12 +68,12 @@ export default function Navbar({ fixed }) {
               </a>
             </li>
             <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
-              <a href="#seeBlog" onClick={() => setNavbarOpen(!navbarOpen)}>
+              <a href="/#seeBlog" onClick={() => setNavbarOpen(!navbarOpen)}>
                 BLOGS
               </a>
             </li>
             <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
-              <a href="#seeContact" onClick={() => setNavbarOpen(!navbarOpen)}>
+              <a href="/#seeContact" onClick={() => setNavbarOpen(!navbarOpen)}>
                 CONTACT
               </a>
             </li>

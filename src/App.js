@@ -17,7 +17,7 @@ function App() {
         <Route element={<Layout />}>
           <Route exact path="/" element={<Landing />} />
           {/* <Route exact path="/#seeAbout" element={<Landmark />} /> */}
-          <Route exact path="/:id" element={<SingleProduct />} />
+          <Route exact path=":id" element={<SingleProduct />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -13,10 +13,6 @@ const SingleProduct = () => {
   }, [id]);
 
   return (
-    // <div className="p-20">
-    //   <h1>{singleProduct.title}</h1>
-    //   <img src={singleProduct.img} alt={singleProduct.title} />
-    // </div>
     <div className="w-full grid content-center justify-items-center py-20">
       <img
         src={singleProduct.img}
