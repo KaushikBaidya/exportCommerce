@@ -11,7 +11,7 @@ const Hero = () => {
           <p className="text-lg md:text-4xl px-3">
             Welcome to{" "}
             <span className="text-left text-[#ED1A37] font-bold uppercase">
-              tvc trading company
+              tvc Vietnam
             </span>
           </p>
           <p className="text-left text-lg md:text-3xl px-3">

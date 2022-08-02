@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex justify-center items-center">
           <img src="/images/logo.png" alt="" className="h-12 ml-5" />
           <h1 className="text-[#585858] font-semibold text-lg lg:text-2xl">
-            Trading Company LTD.
+            TVC Vietnam
           </h1>
         </div>
 
