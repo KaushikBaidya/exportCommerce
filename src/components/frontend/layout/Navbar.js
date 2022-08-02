@@ -27,7 +27,7 @@ export default function Navbar({ fixed }) {
         className={
           "fixed w-full xl:max-w-screen-3xl mx-auto flex flex-wrap items-center justify-between z-10 py-2 " +
           (bgColor
-            ? "bg-[#ffffffef] backdrop-blur-sm text-black shadow-sm"
+            ? "bg-[#201a59e9] backdrop-blur-sm text-white shadow-sm"
             : "bg-[#ffffffef] backdrop-blur-sm lg:bg-transparent ")
         }
       >
