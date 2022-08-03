@@ -15,11 +15,12 @@ const Hero = () => {
             </span>
           </p>
           <p className="text-left text-lg md:text-3xl px-3">
-            Sed do eiusmod tempor incididunt ut labore et dol. Eiusmod tempor
-            incididunt ut labore et dol.
+            Wood pellets can be used instead of charcoal, firewood, oil and gas
+            in heating, cooking, boiler and power plants.
           </p>
           <p className="text-left text-lg px-3">
-            sed do eiusmod tempor incididunt ut labore et dol.
+            An alternative use for wood pellets is animal bedding such as in
+            horse stalls, and all of our pellets are excellent for this..
           </p>
           {/* <button
             class="btn2 w-96 mt-4 px-10 py-5 relative border border-red-500 uppercase font-semibold tracking-wider leading-none overflow-hidden hover:text-white"

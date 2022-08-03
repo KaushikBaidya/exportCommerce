@@ -27,8 +27,8 @@ export default function Navbar({ fixed }) {
         className={
           "fixed w-full xl:max-w-screen-3xl mx-auto flex flex-wrap items-center justify-between z-10 py-2 " +
           (bgColor
-            ? "bg-[#201a59e9] backdrop-blur-sm text-white shadow-sm"
-            : "bg-[#ffffffef] backdrop-blur-sm lg:bg-transparent ")
+            ? "bg-[#201a59e9] backdrop-blur-sm text-white shadow-sm transition duration-200 ease-in"
+            : "bg-[#201a59e9] backdrop-blur-sm text-white lg:text-black lg:bg-transparent ")
         }
       >
         <div className="w-full flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
@@ -38,7 +38,7 @@ export default function Navbar({ fixed }) {
             </div>
           </Link>
           <button
-            className="text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
             type="button"
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
@@ -49,7 +49,6 @@ export default function Navbar({ fixed }) {
           className={
             "lg:flex flex-grow items-center" + (navbarOpen ? "flex" : " hidden")
           }
-          id="example-navbar-danger"
         >
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
             <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
@@ -67,11 +66,11 @@ export default function Navbar({ fixed }) {
                 PRODUCTS
               </a>
             </li>
-            <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
+            {/* <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
               <a href="/#seeBlog" onClick={() => setNavbarOpen(!navbarOpen)}>
                 BLOGS
               </a>
-            </li>
+            </li> */}
             <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
               <a href="/#seeContact" onClick={() => setNavbarOpen(!navbarOpen)}>
                 CONTACT

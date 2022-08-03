@@ -1,5 +1,5 @@
 import React from "react";
-import Blogs from "../components/Blogs";
+
 import Contact from "../components/Contact";
 import Hero from "../components/Hero";
 import Landmark from "../components/Landmark";
@@ -12,7 +12,7 @@ function Landing() {
       <Hero />
       <Landmark />
       <Products />
-      <Blogs />
+
       <Contact />
       <Map />
     </div>
