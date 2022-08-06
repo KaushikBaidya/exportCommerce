@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 // import { useTranslation } from "react-i18next";
