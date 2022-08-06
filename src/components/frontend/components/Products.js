@@ -13,7 +13,7 @@ function Products() {
       <section id="seeProduct" className="min-h-full">
         <div
           id="seeProduct"
-          className="mx-auto grid grid-cols-1 gap-10 lg:px-14 py-20 text-dark"
+          className="mx-auto grid grid-cols-1 gap-10 lg:px-14 pt-20 text-dark"
         >
           <div className="text-center font-semibold text-4xl text-[#36B34B]">
             Our <span className="text-[#F5921E] ">Products</span>

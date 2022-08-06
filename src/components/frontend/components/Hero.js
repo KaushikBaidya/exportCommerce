@@ -5,7 +5,7 @@ const Hero = () => {
     <>
       <div
         id="seeHome"
-        className="text-black lg:px-24 py-28 grid grid-cols-1 md:grid-cols-2 content-center justify-items-center gap-y-10 bg-gray-100 min-h-full"
+        className="text-black lg:px-24 pt-28 grid grid-cols-1 md:grid-cols-2 content-center justify-items-center gap-y-10 bg-gray-100 min-h-full"
       >
         <div className="grid grid-cols-1 text-left gap-y-10">
           <p className="text-lg md:text-4xl px-3">

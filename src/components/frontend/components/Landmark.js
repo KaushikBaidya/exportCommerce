@@ -6,7 +6,7 @@ function Landmark() {
   return (
     <section
       id="seeAbout"
-      className="grid grid-cols-1 px-6 justify-items-center py-20 h-full"
+      className="grid grid-cols-1 px-6 justify-items-center pt-20 h-full"
     >
       <h1 className="text-4xl font-bold mb-5">
         <span className="text-[#36B34B]">About </span>

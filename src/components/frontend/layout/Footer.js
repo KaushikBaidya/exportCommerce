@@ -6,6 +6,7 @@ import {
   FiLinkedin,
   FiMail,
   FiMapPin,
+  FiPhoneCall,
 } from "react-icons/fi";
 // import { Link } from "react-router-dom";
 
@@ -26,10 +27,14 @@ const Footer = () => {
                 Phong city, Viet Nam
               </span>
             </p>
-            {/* <p className="text-sm lg:text-lg text-[#36B34B] font-normal text-center px-5 flex items-center gap-2 my-3">
+            <p className="text-sm lg:text-lg text-[#36B34B] font-normal text-center px-5 flex items-center gap-2 my-3">
               <FiMail />
-              <span className="text-lg text-gray-700">info@rocketship.com</span>
-            </p> */}
+              <span className="text-lg text-gray-700">it@tvcvietnam.com</span>
+            </p>
+            <p className="text-sm lg:text-lg text-[#36B34B] font-normal text-center px-5 flex items-center gap-2 my-3">
+              <FiPhoneCall />
+              <span className="text-lg text-gray-700">+841642786469</span>
+            </p>
             {/* <p className="text-lg text-[#201A59] font-semibold font-sans text-center px-5 ">
               Contact Number
             </p>
