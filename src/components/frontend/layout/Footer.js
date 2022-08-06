@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <p className="text-lg text-gray-700 font-semibold font-sans text-center px-5 ">
+            <p className="text-lg text-gray-700 font-semibold font-sans text-center px-5 mb-3">
               Quick Links
             </p>
             <div className="text-[#36B34B] grid grid-cols-1 justify-items-center">
@@ -67,7 +67,7 @@ const Footer = () => {
           </div>
           <div className="">
             <div className="grid grid-cols-1 justify-items-center">
-              <h1 className="text-[12px] lg:text-[16px] text-[#36B34B] font-semibold sm:mt-2 text-center px-5 uppercase">
+              <h1 className="text-[12px] lg:text-[16px] text-gray-700 font-semibold sm:mt-2 text-center px-5 uppercase">
                 stay connected
               </h1>
               <hr className="h-[2px] w-[100px] bg-[#F5921E]" />
