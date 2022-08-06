@@ -58,7 +58,7 @@ const Form = ({ title = "" }) => {
         name="message"
         placeholder={t("your-message")}
       />
-      <button className="button hover:bg-[#201A59]" type="">
+      <button className="button hover:bg-[#f8982b]" type="">
         {t("button")}
       </button>
 

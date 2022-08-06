@@ -10,7 +10,7 @@ function Products() {
 
   return (
     <>
-      <section id="seeProduct" className="border-b min-h-full bg-gray-100">
+      <section id="seeProduct" className="min-h-full">
         <div
           id="seeProduct"
           className="mx-auto grid grid-cols-1 gap-10 lg:px-14 py-20 text-dark"
@@ -19,24 +19,24 @@ function Products() {
             Our Products
           </div>
 
-          <div className="px-5 lg:px-14 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="px-5 lg:px-14 grid grid-cols-1 md:grid-cols-3 gap-4">
             {data.map((item) => (
               <div
                 key={item.id}
-                className=" w-full grid content-center justify-items-center"
+                className="w-full flex flex-col items-center justify-between rounded-xl shadow-lg gap-y-3"
               >
-                <img src={item.img} className="h-72" alt="" />
+                <img src={item.img} className="h-72 rounded-lg" alt="" />
                 <div className="mt-2">
                   <Link to={item.id}>
-                    <h1 className="text-base text-center font-semibold text-blue-600">
+                    <h1 className="text-lg text-center font-medium text-[#36B34B] px-4">
                       {item.title}
                     </h1>
                   </Link>
-                  <p className="text-base text-center font-semibold">
+                  <p className="text-base text-center font-semibold ">
                     {item.price}
                   </p>
                 </div>
-                <div className="px-2 py-1 bg-[#F5921E] m-2 text-white text-sm rounded">
+                <div className="px-2 mb-4 bg-[#F5921E] m-2 text-white text-sm rounded">
                   <Buynow title={item.title} />
                 </div>
               </div>

@@ -11,6 +11,9 @@ module.exports = {
         banner: "url('./images/banner.jpg')",
         bgBanner: "url('./images/bg-banner.jpg')",
       },
+      fontFamily: {
+        body: ["Titillium Web"],
+      },
     },
   },
   plugins: [],

@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap");
+
+/* * {
+  font-family: "Titillium Web", sans-serif;
+} */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,7 +33,7 @@
   width: 100%;
   padding: 10px 20px;
   color: aliceblue;
-  background-color: #352b8e;
+  background-color: #f5921e;
   font-size: 16px;
   border: none;
   border-radius: 5px;
@@ -41,16 +47,3 @@
 .btn2:hover span {
   transform: translateX(0);
 }
-
-.hight-half {
-  height: 50vh;
-}
-
-/* .custom {
-  border-color: linear-gradient(
-    0deg,
-    rgba(46, 23, 84, 1) 0%,
-    rgba(250, 15, 15, 1) 50%,
-    rgba(246, 228, 15, 1) 100%
-  );
-} */

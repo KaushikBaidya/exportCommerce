@@ -7,9 +7,9 @@ function Contact() {
 
   return (
     <>
-      <section id="seeContact" className="border-b py-20 bg-gray-100  h-full">
-        <div className="text-center font-semibold text-4xl text-[#ED1A37]">
-          Contact Us
+      <section id="seeContact" className="border-b py-20 h-full">
+        <div className="text-center font-semibold text-4xl text-[#36B34B]">
+          GET IN TOUCH WITH US
         </div>
         <div className="container max-w-4xl mx-auto overflow-hidden flex flex-col px-5">
           <Form />

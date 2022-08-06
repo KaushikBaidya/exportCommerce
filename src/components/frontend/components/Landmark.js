@@ -4,7 +4,7 @@ import React from "react";
 function Landmark() {
   // const { t } = useTranslation(["landmark"]);
   return (
-    <section id="seeAbout" className="border-b py-20 h-full">
+    <section id="seeAbout" className="py-20 h-full">
       <div className="grid grid-cols-1 md:grid-cols-2 px-6 gap-x-6 items-center">
         <div>
           <img
@@ -15,8 +15,10 @@ function Landmark() {
         </div>
         <div className="text-black grid md:text-lg gap-y-5 mt-2 md:mt-0">
           <h1 className="font-bold text-xl md:text-xl lg:text-4xl font-mono text-center">
-            About{" "}
-            <span className="md:text-2xl lg:text-5xl text-[#36B34B]">TVC</span>
+            <span className="md:text-2xl lg:text-5xl text-[#36B34B]">
+              About{" "}
+            </span>
+            <span className="md:text-2xl lg:text-5xl text-[#F5921E]">Us</span>
           </h1>
           <p className="text-justify ">
             Climate change is a global challenge and fighting it requires
