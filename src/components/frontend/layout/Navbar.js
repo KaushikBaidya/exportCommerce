@@ -32,23 +32,23 @@ export default function Navbar({ fixed }) {
           }
         >
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-            <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
+            <li className="px-4 border-transparent border-b-4 hover:border-[#36B34B] py-2 text-md font-medium uppercase">
               <a href="/#seeHome" onClick={() => setNavbarOpen(!navbarOpen)}>
                 HOME
               </a>
             </li>
-            <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
+            <li className="px-4 border-transparent border-b-4 hover:border-[#36B34B] py-2 text-md font-medium uppercase">
               <a href="/#seeAbout" onClick={() => setNavbarOpen(!navbarOpen)}>
                 ABOUT
               </a>
             </li>
-            <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
+            <li className="px-4 border-transparent border-b-4 hover:border-[#36B34B] py-2 text-md font-medium uppercase">
               <a href="/#seeProduct" onClick={() => setNavbarOpen(!navbarOpen)}>
                 PRODUCTS
               </a>
             </li>
 
-            <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
+            <li className="px-4 border-transparent border-b-4 hover:border-[#36B34B] py-2 text-md font-medium uppercase">
               <a href="/#seeContact" onClick={() => setNavbarOpen(!navbarOpen)}>
                 CONTACT
               </a>
