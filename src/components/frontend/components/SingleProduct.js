@@ -71,7 +71,7 @@ const SingleProduct = () => {
           </tbody>
         </table>
       </div>
-      <div className="px-2 py-1 bg-[#201A59] m-2 text-white text-sm rounded">
+      <div className="px-2 py-1 bg-[#F5921E] m-2 text-white text-sm rounded">
         <Buynow title={singleProduct.title} />
       </div>
     </div>
