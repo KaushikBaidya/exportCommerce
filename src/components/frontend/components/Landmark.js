@@ -16,7 +16,7 @@ function Landmark() {
         <div className="text-black grid md:text-lg gap-y-5 mt-2 md:mt-0">
           <h1 className="font-bold text-xl md:text-xl lg:text-4xl font-mono text-center">
             About{" "}
-            <span className="md:text-2xl lg:text-5xl text-[#ED1A37]">TVC</span>
+            <span className="md:text-2xl lg:text-5xl text-[#36B34B]">TVC</span>
           </h1>
           <p className="text-justify ">
             Climate change is a global challenge and fighting it requires

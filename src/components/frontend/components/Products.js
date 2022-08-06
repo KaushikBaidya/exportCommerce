@@ -15,7 +15,7 @@ function Products() {
           id="seeProduct"
           className="mx-auto grid grid-cols-1 gap-10 lg:px-14 py-20 text-dark"
         >
-          <div className="text-center font-semibold text-4xl text-[#ED1A37]">
+          <div className="text-center font-semibold text-4xl text-[#36B34B]">
             Our Products
           </div>
 
@@ -36,13 +36,13 @@ function Products() {
                     {item.price}
                   </p>
                 </div>
-                <div className="px-2 py-1 bg-[#201A59] m-2 text-white text-sm rounded">
+                <div className="px-2 py-1 bg-[#F5921E] m-2 text-white text-sm rounded">
                   <Buynow title={item.title} />
                 </div>
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 px-4 content-center justify-items-center gap-x-2">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 px-4 content-center justify-items-center gap-x-2">
             <div className="w-full min-h-20 grid grid-cols-2 content-center justify-items-center bg-yellow-200 rounded-lg mt-2">
               <div>
                 <img
@@ -69,7 +69,7 @@ function Products() {
                 <p className="text-base font-semibold">$12/ Kilogram</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

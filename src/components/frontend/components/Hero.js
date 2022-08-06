@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 text-left gap-y-10">
           <p className="text-lg md:text-4xl px-3">
             Welcome to{" "}
-            <span className="text-left text-[#ED1A37] font-bold uppercase">
+            <span className="text-left text-[#36B34B] font-bold uppercase">
               tvc Vietnam
             </span>
           </p>
