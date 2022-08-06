@@ -6,35 +6,16 @@ import { Link } from "react-router-dom";
 
 export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const [bgColor, setBgColor] = useState(false);
-
-  useEffect(() => {
-    const changeColor = () => {
-      if (window.scrollY >= 70) {
-        setBgColor(true);
-      } else {
-        setBgColor(false);
-      }
-    };
-    window.addEventListener("scroll", changeColor);
-  }, []);
 
   // const { t } = useTranslation(["common"]);
 
   return (
     <>
-      <div
-        className={
-          "fixed w-full xl:max-w-screen-3xl mx-auto flex flex-wrap items-center justify-between z-10 py-2 " +
-          (bgColor
-            ? "bg-[#201a59e9] backdrop-blur-sm text-white shadow-sm transition duration-200 ease-in"
-            : "bg-[#201a59e9] backdrop-blur-sm text-white lg:text-black lg:bg-transparent ")
-        }
-      >
+      <div className="fixed w-full xl:max-w-screen-3xl mx-auto flex flex-wrap items-center justify-between z-10 py-2 bg-white backdrop-blur-sm text-black shadow-sm transition duration-200 ease-in">
         <div className="w-full flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <Link to="/">
             <div>
-              <img src="/images/logo.png" alt="" className="h-14 ml-5" />
+              <img src="/images/logo.png" alt="" className="h-16 ml-5" />
             </div>
           </Link>
           <button
@@ -66,11 +47,7 @@ export default function Navbar({ fixed }) {
                 PRODUCTS
               </a>
             </li>
-            {/* <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
-              <a href="/#seeBlog" onClick={() => setNavbarOpen(!navbarOpen)}>
-                BLOGS
-              </a>
-            </li> */}
+
             <li className="px-4 border-transparent border-b-4 hover:border-[#201A59] py-2 text-md font-medium uppercase">
               <a href="/#seeContact" onClick={() => setNavbarOpen(!navbarOpen)}>
                 CONTACT
