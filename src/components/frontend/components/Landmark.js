@@ -18,17 +18,7 @@ function Landmark() {
             About{" "}
             <span className="md:text-2xl lg:text-5xl text-[#ED1A37]">TVC</span>
           </h1>
-          <p className="text-justify">
-            Climate change is a global challenge and fighting it requires
-            coordinated actions by all countries in the world. Bioenergy is a
-            key strategy to reduce carbon emissions and limit dependence on
-            fossil fuels.
-          </p>
-          <p className="text-justify">
-            Since Vietnam has the advantage in large sustainably planted forest
-            areas, it is a potential country to develop strong logging and
-            biomass energy industry.{" "}
-          </p>
+
           <p className="text-justify">
             TVC VietNam is founded to play a key role in reducing the emissions
             that contribute to global warming and climate change by producing
