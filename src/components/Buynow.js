@@ -3,9 +3,11 @@ import React, { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import Form from "./Form";
 // import toast from "react-hot-toast";
+import { useTranslation } from "react-i18next";
 
 const Buynow = ({ title }) => {
   let [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation(["product"]);
 
   function closeModal() {
     setIsOpen(false);
@@ -23,7 +25,7 @@ const Buynow = ({ title }) => {
           openModal();
         }}
       >
-        Buy Now
+        {t("button")}
       </button>
 
       <Transition appear show={isOpen} as={Fragment}>

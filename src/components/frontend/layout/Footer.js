@@ -8,9 +8,10 @@ import {
   FiMapPin,
   FiPhoneCall,
 } from "react-icons/fi";
-// import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation(["common"]);
   return (
     <>
       <div className="w-full grid grid-cols-1 justify-items-center py-10 bg-white">
@@ -22,10 +23,7 @@ const Footer = () => {
           <div>
             <p className="text-sm lg:text-lg text-[#36B34B] font-normal text-center px-5 flex items-center gap-2 my-3">
               <FiMapPin size={36} />
-              <span className="text-normal text-gray-700">
-                No. 7/1 Pham Minh Duc street, May To wd, Ngo Quyen dist, Hai
-                Phong city, Viet Nam
-              </span>
+              <span className="text-normal text-gray-700">{t("address")}</span>
             </p>
             <p className="text-sm lg:text-lg text-[#36B34B] font-normal text-center px-5 flex items-center gap-2 my-3">
               <FiMail />
@@ -35,40 +33,31 @@ const Footer = () => {
               <FiPhoneCall />
               <span className="text-lg text-gray-700">+841642786469</span>
             </p>
-            {/* <p className="text-lg text-[#201A59] font-semibold font-sans text-center px-5 ">
-              Contact Number
-            </p>
-            <p className="text-sm lg:text-lg text-[#201A59] font-normal font-sans text-center px-5 ">
-              +4407983241778
-            </p>
-            <p className="text-sm lg:text-lg text-[#201A59] font-normal font-sans text-center px-5 ">
-              +4407848938273
-            </p> */}
           </div>
 
           <div>
             <p className="text-lg text-gray-700 font-semibold font-sans text-center px-5 mb-3">
-              Quick Links
+              {t("links")}
             </p>
             <div className="text-[#36B34B] grid grid-cols-1 justify-items-center">
               <p>
-                <a href="#seeHero">Home</a>
+                <a href="#seeHero">{t("home")}</a>
               </p>
               <p>
-                <a href="#seeAbout">About</a>
+                <a href="#seeAbout">{t("about")}</a>
               </p>
               <p>
-                <a href="#seeProduct">Products</a>
+                <a href="#seeProduct">{t("products")}</a>
               </p>
               <p>
-                <a href="#seeContact">Contact</a>
+                <a href="#seeContact">{t("contact")}</a>
               </p>
             </div>
           </div>
           <div className="">
             <div className="grid grid-cols-1 justify-items-center">
               <h1 className="text-[12px] lg:text-[16px] text-gray-700 font-semibold sm:mt-2 text-center px-5 uppercase">
-                stay connected
+                {t("connect")}
               </h1>
               <hr className="h-[2px] w-[100px] bg-[#F5921E]" />
             </div>

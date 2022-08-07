@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import data from "../../../Data/Data";
 import { useParams } from "react-router-dom";
 import Buynow from "../../Buynow";
+import { useTranslation } from "react-i18next";
 
 const SingleProduct = () => {
+  const { t } = useTranslation(["product"]);
   const { id } = useParams();
   const [singleProduct, setSingleProduct] = useState({});
 
@@ -29,43 +31,40 @@ const SingleProduct = () => {
         </p>
       </div>
       <div className="max-w-2xl mx-auto my-10">
-        <table className="table-auto">
+        <table className="table-auto border-separate border-spacing-8 ">
           <thead>
             <tr>
-              <th>Description</th>
-              <th>Details</th>
+              <th>{t("tb1")}</th>
+              <th>{t("tb1")}</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Material:</td>
-              <td>
-                pine wooden, sugarcane bagasse, sawdust, rice husk , eucalyptus
-                wooden, acacia wooden, cashew wooden
-              </td>
+              <td>{t("tb3")}</td>
+              <td>{t("d1")}</td>
             </tr>
             <tr>
-              <td>Diameter:</td>
+              <td>{t("tb4")}</td>
               <td>6mm or 8mm or 90mm</td>
             </tr>
             <tr>
-              <td>Length:</td>
+              <td>{t("tb5")}</td>
               <td>30 - 50mm</td>
             </tr>
             <tr>
-              <td>Moisture content</td>
+              <td>{t("tb6")}</td>
               <td> {`< 10%`} </td>
             </tr>
             <tr>
-              <td>Ash content</td>
+              <td>{t("tb7")}</td>
               <td> {`< 4%`} </td>
             </tr>
             <tr>
-              <td>Net calorific value:</td>
+              <td>{t("tb8")}</td>
               <td> 4300-4800 kcal/kg </td>
             </tr>
             <tr>
-              <td>Bulk density:</td>
+              <td>{t("tb9")}</td>
               <td> 730kg/m3 </td>
             </tr>
           </tbody>

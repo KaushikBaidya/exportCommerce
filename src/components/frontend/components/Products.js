@@ -3,10 +3,10 @@ import Buynow from "../../Buynow";
 import data from "../../../Data/Data";
 
 import { Link } from "react-router-dom";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 function Products() {
-  // const { t } = useTranslation(["project"]);
+  const { t } = useTranslation(["product"]);
 
   return (
     <>
@@ -16,7 +16,7 @@ function Products() {
           className="mx-auto grid grid-cols-1 gap-10 lg:px-14 pt-20 text-dark"
         >
           <div className="text-center font-semibold text-4xl text-[#36B34B]">
-            Our <span className="text-[#F5921E] ">Products</span>
+            {t("title")} <span className="text-[#F5921E] ">{t("title1")}</span>
           </div>
 
           <div className="px-5 lg:px-14 grid grid-cols-1 md:grid-cols-3 gap-4">

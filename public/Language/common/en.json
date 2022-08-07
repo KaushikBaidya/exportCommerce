@@ -1,11 +1,9 @@
 {
   "home": "HOME",
   "about": "ABOUT",
-  "projects": "PROJECTS",
-  "services": "SERVICES",
+  "products": "PRODUCTS",
   "contact": "CONTACT",
-  "address": "House #08 ( 1st Floor ), Road # 01, Nikunjo-02, Khilkhet, Dhaka-1229, Bangladesh",
+  "address": "No. 7/1 Pham Minh Duc street, May To wd, Ngo Quyen dist, Hai Phong city, Viet Nam",
   "links": "Quick Links",
-  "email": "Email Address",
-  "mobile": "Hot Line"
+  "connect": "STAY CONNECTED"
 }

@@ -23,16 +23,16 @@ function Language() {
 
   return (
     <>
-      <div className="p-2 text-white flex rounded border-transparent border-b-4 text-md font-medium uppercase">
+      <div className="p-2 text-black flex rounded text-md font-medium uppercase">
         {language === "en" ? (
           <button
             className="flex items-center border px-1 space-x-1"
-            value="bn"
+            value="vn"
             type="submit"
             onClick={handleLanguageChange}
           >
-            <span>BN</span>
-            <img src="/images/icons/bd.png" className="w-5 h-5" alt="uk" />
+            <span>VN</span>
+            <img src="/images/icons/vn.png" className="w-5 h-5" alt="uk" />
           </button>
         ) : (
           <button

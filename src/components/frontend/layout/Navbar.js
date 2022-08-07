@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
-// import { useTranslation } from "react-i18next";
-// import Language from "./Language";
+import { useTranslation } from "react-i18next";
+import Language from "./Language";
 
 export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
-  // const { t } = useTranslation(["common"]);
+  const { t } = useTranslation(["common"]);
 
   return (
     <>
@@ -34,28 +34,28 @@ export default function Navbar({ fixed }) {
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
             <li className="px-4 border-transparent border-b-4 hover:border-[#36B34B] py-2 text-md font-medium uppercase">
               <a href="/#seeHome" onClick={() => setNavbarOpen(!navbarOpen)}>
-                HOME
+                {t("home")}
               </a>
             </li>
             <li className="px-4 border-transparent border-b-4 hover:border-[#36B34B] py-2 text-md font-medium uppercase">
               <a href="/#seeAbout" onClick={() => setNavbarOpen(!navbarOpen)}>
-                ABOUT
+                {t("about")}
               </a>
             </li>
             <li className="px-4 border-transparent border-b-4 hover:border-[#36B34B] py-2 text-md font-medium uppercase">
               <a href="/#seeProduct" onClick={() => setNavbarOpen(!navbarOpen)}>
-                PRODUCTS
+                {t("products")}
               </a>
             </li>
 
             <li className="px-4 border-transparent border-b-4 hover:border-[#36B34B] py-2 text-md font-medium uppercase">
               <a href="/#seeContact" onClick={() => setNavbarOpen(!navbarOpen)}>
-                CONTACT
+                {t("contact")}
               </a>
             </li>
-            {/* <li onClick={() => setNavbarOpen(!navbarOpen)}>
+            <li onClick={() => setNavbarOpen(!navbarOpen)}>
               <Language />
-            </li> */}
+            </li>
           </ul>
         </div>
       </div>
