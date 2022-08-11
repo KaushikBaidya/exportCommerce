@@ -19,19 +19,19 @@ const Footer = () => {
           <img src="/images/logo.png" alt="" className="h-20 ml-5" />
         </div>
 
-        <div className="w-full grid grid-cols-1 md:grid-cols-3 justify-items-center gap-y-2 py-2 mt-2">
-          <div>
-            <p className="text-sm lg:text-lg text-[#36B34B] font-normal text-center px-5 flex items-center gap-2 my-3">
+        <div className="max-w-[1500px] grid grid-cols-1 md:grid-cols-3 justify-items-center gap-y-2 py-2 mt-2">
+          <div className="pl-10">
+            <p className="text-sm lg:text-lg text-[#36B34B] font-normal text-left px-5 flex items-center gap-2 my-3">
               <FiMapPin size={36} />
               <span className="text-normal text-gray-700">{t("address")}</span>
             </p>
             <p className="text-sm lg:text-lg text-[#36B34B] font-normal text-center px-5 flex items-center gap-2 my-3">
               <FiMail />
-              <span className="text-lg text-gray-700">it@tvcvietnam.com</span>
+              <span className="text-lg text-gray-700">sale@tvcvietnam.com</span>
             </p>
             <p className="text-sm lg:text-lg text-[#36B34B] font-normal text-center px-5 flex items-center gap-2 my-3">
               <FiPhoneCall />
-              <span className="text-lg text-gray-700">+841642786469</span>
+              <span className="text-lg text-gray-700">+84 899775068</span>
             </p>
           </div>
 
@@ -86,8 +86,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-center pb-16 md:pb-0 bg-[#36B34B] py-1">
-        <p className="text-uppercase font-bold text-gray-200">
+      <div className="text-center text-sm pb-16 md:pb-0 bg-[#36B34B] py-1">
+        <p className="text-uppercase font-semibold text-gray-200">
           ©{new Date().getFullYear()}
           <span className="ml-2">TVC Vietnam All rights reserved</span>
         </p>
@@ -97,7 +97,7 @@ const Footer = () => {
             href="https://chimbukit.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-bold ml-2"
+            className="font-semibold ml-2"
           >
             <span className="">Chimbuk IT</span>
           </a>

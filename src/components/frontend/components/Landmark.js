@@ -12,19 +12,19 @@ function Landmark() {
         <span className="text-[#36B34B] uppercase">{t("title")} </span>
         <span className="text-[#F5921E] uppercase">{t("title1")}</span>
       </h1>
-      <div className="max-w-5xl grid grid-cols-1 md:grid-cols-2 justify-items-center gap-5 my-5">
+      <div className="max-w-[1500px] mx-auto grid grid-cols-1 md:grid-cols-3 justify-items-center gap-5 my-5">
         <img
           src="images/gallery/burning.jpg"
           className="h-56 rounded-lg"
           alt=""
         />
-        <div className="flex flex-col text-lg">
+        <div className="col-span-2 flex flex-col text-xl pr-10">
           <p className="text-justify my-2">{t("article1")}</p>
           <p className="text-justify mb-2">{t("article2")}</p>
         </div>
       </div>
-      <div className="max-w-5xl grid grid-cols-1 md:grid-cols-2 justify-items-center gap-5 my-5">
-        <div className="flex flex-col text-lg">
+      <div className="max-w-[1500px] mx-auto grid grid-cols-1 md:grid-cols-3 justify-items-center gap-5 my-5">
+        <div className="col-span-2 flex flex-col text-xl pl-10">
           <p className="text-justify my-2">{t("article3")}</p>
           <p className="text-justify mb-2">{t("article4")}</p>
         </div>
@@ -34,7 +34,9 @@ function Landmark() {
           alt=""
         />
       </div>
-      <p className="max-w-5xl text-justify text-lg my-5">{t("article5")}</p>
+      <p className="max-w-[1500px] text-justify text-lg mb-10 px-10">
+        {t("article5")}
+      </p>
     </section>
   );
 }

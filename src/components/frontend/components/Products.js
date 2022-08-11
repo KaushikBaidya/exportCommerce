@@ -10,20 +10,20 @@ function Products() {
 
   return (
     <>
-      <section id="seeProduct" className="min-h-full">
+      <section id="seeProduct" className="min-h-full bg-gray-50 py-10">
         <div
           id="seeProduct"
-          className="mx-auto grid grid-cols-1 gap-10 lg:px-14 pt-20 text-dark"
+          className="max-w-[1500px] mx-auto grid grid-cols-1 gap-10 lg:px-10 text-dark"
         >
           <div className="text-center font-semibold text-4xl text-[#36B34B]">
             {t("title")} <span className="text-[#F5921E] ">{t("title1")}</span>
           </div>
 
-          <div className="px-5 lg:px-14 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="px-5 lg:px-5 grid grid-cols-1 md:grid-cols-3 gap-4">
             {data.map((item) => (
               <div
                 key={item.id}
-                className="w-full flex flex-col items-center justify-between rounded-xl shadow-lg gap-y-3"
+                className="w-full flex flex-col items-center justify-between rounded-xl shadow-lg gap-y-3 bg-white"
               >
                 <img src={item.img} className="h-72 rounded-lg" alt="" />
                 <div className="mt-2">
