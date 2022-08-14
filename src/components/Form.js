@@ -7,7 +7,6 @@ import { useTranslation } from "react-i18next";
 const Form = ({ title = "" }) => {
   const form = useRef();
   const { t } = useTranslation(["contact"]);
-  // const [done, setDone] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");

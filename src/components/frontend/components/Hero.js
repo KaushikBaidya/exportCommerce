@@ -8,7 +8,7 @@ const Hero = () => {
       <div id="seeHome" className="text-white bg-white antialiased">
         <div className="py-20 bg-banner bg-cover h-full bg-no-repeat bg-fixed">
           <div className="max-w-[1500px] mx-auto grid grid-cols-1 text-left gap-y-10 px-10 py-20 ">
-            <div className="w-1/2 grid gap-y-5">
+            <div className="w-full lg:w-1/2 grid gap-y-5">
               <p className="text-2xl md:text-4xl px-3">
                 {t("title")}{" "}
                 <span className="text-left text-[#F5921E] font-bold uppercase">
