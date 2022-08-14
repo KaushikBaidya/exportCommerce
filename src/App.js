@@ -5,6 +5,7 @@ import "./App.css";
 
 // import Landmark from "./components/frontend/components/Landmark";
 import SingleProduct from "./components/frontend/components/SingleProduct";
+import { Toaster } from "react-hot-toast";
 
 const NotFound = lazy(() => import("./components/frontend/pages/NotFound"));
 const Landing = lazy(() => import("./components/frontend/landing/Landing"));
@@ -20,6 +21,7 @@ function App() {
   };
   return (
     <Suspense fallback={<FallbackLoading />}>
+      <Toaster position="top-right" reverseOrder={false} />
       <Wrapper>
         <Routes>
           <Route element={<Layout />}>

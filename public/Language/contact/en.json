@@ -1,8 +1,9 @@
 {
   "title": "Get In Touch With Us",
   "button": "Send",
-  "message": "thank you for your message. we will contact you soon.",
+  "message": "Thank you for your message. We will contact you soon.",
   "name": "Name",
+  "phone": "Mobile Number",
   "email": "Email",
   "subject": "Subject",
   "your-message": "Message"
