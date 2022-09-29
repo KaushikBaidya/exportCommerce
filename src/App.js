@@ -3,9 +3,9 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { FallbackLoading } from "./components/Loading";
 import "./App.css";
 
+import { Toaster } from "react-hot-toast";
 // import Landmark from "./components/frontend/components/Landmark";
 import SingleProduct from "./components/frontend/components/SingleProduct";
-import { Toaster } from "react-hot-toast";
 
 const NotFound = lazy(() => import("./components/frontend/pages/NotFound"));
 const Landing = lazy(() => import("./components/frontend/landing/Landing"));
@@ -28,6 +28,8 @@ function App() {
             <Route exact path="/" element={<Landing />} />
             {/* <Route exact path="/#seeAbout" element={<Landmark />} /> */}
             <Route exact path=":id" element={<SingleProduct />} />
+            {/* <Route exact path="/signin" element={<SignIn />} />
+            <Route exact path="/signup" element={<SignUp />} /> */}
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

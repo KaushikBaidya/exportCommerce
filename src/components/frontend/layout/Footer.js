@@ -22,8 +22,13 @@ const Footer = () => {
         <div className="max-w-[1500px] grid grid-cols-1 md:grid-cols-3 justify-items-center gap-y-2 py-2 mt-2">
           <div className="pl-10">
             <p className="text-sm lg:text-lg text-[#36B34B] font-normal text-left px-5 flex items-center gap-2 my-3">
+              <span className="text-[20px] font-bold text-[#36B34B]">
+                TVC VIET NAM IMPORT EXPORT COMPANY LIMITED
+              </span>
+            </p>
+            <p className="text-sm lg:text-lg text-[#36B34B] font-normal text-left px-5 flex items-center gap-2 my-3">
               <FiMapPin size={36} />
-              <span className="text-normal text-gray-700">{t("address")}</span>
+              <span className="font-normal text-gray-700">{t("address")}</span>
             </p>
             <p className="text-sm lg:text-lg text-[#36B34B] font-normal text-center px-5 flex items-center gap-2 my-3">
               <FiMail />
