@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import data from "../../../Data/Data";
+import data from "../../../Data/wood";
 import { useParams } from "react-router-dom";
 import Buynow from "../../Buynow";
 import { useTranslation } from "react-i18next";

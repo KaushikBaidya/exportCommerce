@@ -23,7 +23,7 @@ const Footer = () => {
           <div className="pl-10">
             <p className="text-sm lg:text-lg text-[#36B34B] font-normal text-left px-5 flex items-center gap-2 my-3">
               <span className="text-[20px] font-bold text-[#36B34B]">
-                TVC VIET NAM IMPORT EXPORT COMPANY LIMITED
+                TVC VIET NAM INTERNATIONAL IMPORT EXPORT COMPANY LIMITED
               </span>
             </p>
             <p className="text-sm lg:text-lg text-[#36B34B] font-normal text-left px-5 flex items-center gap-2 my-3">

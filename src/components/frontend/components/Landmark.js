@@ -34,9 +34,6 @@ function Landmark() {
           alt=""
         />
       </div>
-      <p className="max-w-[1500px] text-justify text-lg mb-10 lg:px-10">
-        {t("article5")}
-      </p>
     </section>
   );
 }
