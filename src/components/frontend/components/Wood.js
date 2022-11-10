@@ -1,12 +1,12 @@
-import React from "react";
-import Buynow from "../../Buynow";
-import data from "../../../Data/wood";
+import React from 'react'
+import Buynow from '../../Buynow'
+import data from '../../../Data/wood'
 
-import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import { Link } from 'react-router-dom'
+// import { useTranslation } from 'react-i18next'
 
 function Wood() {
-  const { t } = useTranslation(["product"]);
+  // const { t } = useTranslation(['product'])
 
   return (
     <>
@@ -29,21 +29,21 @@ function Wood() {
 
                 <div className="p-4 md:p-5">
                   <Link to={item.id}>
-                    <h3 className="text-base font-medium uppercase text-gray-800 dark:text-white">
+                    <h3 className="text-base font-medium uppercase text-gray-800 ">
                       {item.title}
                     </h3>
                   </Link>
-                  <div className="px-2 mb-4 bg-[#F5921E] m-2 text-white text-sm rounded">
+                  <div className="px-2 mb-4 bg-[#F5921E] m-2 text-black text-sm rounded">
                     <Buynow title={item.title} />
                   </div>
                 </div>
               </div>
-            );
+            )
           })}
         </div>
       </section>
     </>
-  );
+  )
 }
 
-export default Wood;
+export default Wood

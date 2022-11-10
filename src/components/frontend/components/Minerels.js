@@ -1,12 +1,12 @@
-import React from "react";
-import Buynow from "../../Buynow";
-import data from "../../../Data/minerels";
+import React from 'react'
+import Buynow from '../../Buynow'
+import data from '../../../Data/minerels'
 
-import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import { Link } from 'react-router-dom'
+// import { useTranslation } from "react-i18next";
 
 function Minerels() {
-  const { t } = useTranslation(["product"]);
+  // const { t } = useTranslation(["product"]);
 
   return (
     <>
@@ -29,7 +29,7 @@ function Minerels() {
 
                 <div className="p-4 md:p-5">
                   <Link to={item.id}>
-                    <h3 className="text-base font-medium uppercase text-gray-800 dark:text-white">
+                    <h3 className="text-base font-medium uppercase text-gray-800">
                       {item.title}
                     </h3>
                   </Link>
@@ -38,12 +38,12 @@ function Minerels() {
                   </div>
                 </div>
               </div>
-            );
+            )
           })}
         </div>
       </section>
     </>
-  );
+  )
 }
 
-export default Minerels;
+export default Minerels
