@@ -5,19 +5,18 @@ import BuyNow from '../../Buynow'
 
 // import { useTranslation } from 'react-i18next'
 
-function Wood() {
+function WoodProduct() {
   // const { t } = useTranslation(['product'])
-  const newData = data.slice(0, 4)
 
   return (
-    <section className="max-w-screen-2xl mx-auto py-5">
+    <section className="max-w-screen-2xl mx-auto py-20">
       <div className="text-left">
-        <h1 className="font-semibold text-2xl pl-10 pb-5 text-[#36B34B] uppercase">
+        <h1 className="font-semibold text-2xl pl-10 py-5 text-[#36B34B] uppercase">
           Wood Products
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 px-5">
-        {newData.map((item) => {
+        {data.map((item) => {
           return (
             <div
               key={item.id}
@@ -41,15 +40,8 @@ function Wood() {
           )
         })}
       </div>
-      <div className="max-w-lg mx-auto">
-        <Link to="/woodProducts">
-          <p className="text-center my-5 text-lg uppercase text-green-700 hover:text-orange-600">
-            ----- View All wood products -----
-          </p>
-        </Link>
-      </div>
     </section>
   )
 }
 
-export default Wood
+export default WoodProduct

@@ -1,19 +1,19 @@
 import React from 'react'
-import data from '../../../Data/wood'
+import data from '../../../Data/minerels'
+
 import { Link } from 'react-router-dom'
 import BuyNow from '../../Buynow'
+// import { useTranslation } from "react-i18next";
 
-// import { useTranslation } from 'react-i18next'
-
-function Wood() {
-  // const { t } = useTranslation(['product'])
+function Minerals() {
+  // const { t } = useTranslation(["product"]);
   const newData = data.slice(0, 4)
 
   return (
-    <section className="max-w-screen-2xl mx-auto py-5">
+    <section className="max-w-screen-2xl mx-auto">
       <div className="text-left">
         <h1 className="font-semibold text-2xl pl-10 pb-5 text-[#36B34B] uppercase">
-          Wood Products
+          Mineral Products
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 px-5">
@@ -42,9 +42,9 @@ function Wood() {
         })}
       </div>
       <div className="max-w-lg mx-auto">
-        <Link to="/woodProducts">
+        <Link to="/mineralProducts">
           <p className="text-center my-5 text-lg uppercase text-green-700 hover:text-orange-600">
-            ----- View All wood products -----
+            ----- View All Mineral products -----
           </p>
         </Link>
       </div>
@@ -52,4 +52,4 @@ function Wood() {
   )
 }
 
-export default Wood
+export default Minerals

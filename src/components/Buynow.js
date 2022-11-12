@@ -1,31 +1,31 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState } from 'react'
 // import { AiOutlineRest } from "react-icons/ai";
-import { Dialog, Transition } from "@headlessui/react";
-import Form from "./Form";
+import { Dialog, Transition } from '@headlessui/react'
+import Form from './Form'
 // import toast from "react-hot-toast";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next'
 
-const Buynow = ({ title }) => {
-  let [isOpen, setIsOpen] = useState(false);
-  const { t } = useTranslation(["product"]);
+const BuyNow = ({ title }) => {
+  let [isOpen, setIsOpen] = useState(false)
+  const { t } = useTranslation(['product'])
 
   function closeModal() {
-    setIsOpen(false);
+    setIsOpen(false)
   }
 
   function openModal() {
-    setIsOpen(true);
+    setIsOpen(true)
   }
 
   return (
     <>
       <button
-        className="btn-danger w-24 h-10"
+        className="btn-danger w-56 h-10 text-center"
         onClick={() => {
-          openModal();
+          openModal()
         }}
       >
-        {t("button")}
+        {t('button')}
       </button>
 
       <Transition appear show={isOpen} as={Fragment}>
@@ -71,7 +71,7 @@ const Buynow = ({ title }) => {
         </Dialog>
       </Transition>
     </>
-  );
-};
+  )
+}
 
-export default Buynow;
+export default BuyNow
