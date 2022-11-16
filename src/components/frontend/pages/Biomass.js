@@ -5,14 +5,14 @@ import BuyNow from '../../Buynow'
 
 // import { useTranslation } from 'react-i18next'
 
-function WoodProduct() {
+function Biomass() {
   // const { t } = useTranslation(['product'])
 
   return (
     <section className="max-w-screen-2xl mx-auto py-20">
       <div className="text-left">
         <h1 className="font-semibold text-2xl pl-10 py-5 text-[#36B34B] uppercase">
-          Wood Products
+          Biomass Products
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 px-5">
@@ -27,7 +27,7 @@ function WoodProduct() {
               </div>
 
               <div className="p-4 md:p-5">
-                <Link to={item.id}>
+                <Link to={`/${item.id}`}>
                   <h3 className="text-lg font-normal uppercase text-gray-800 ">
                     {item.title}
                   </h3>
@@ -44,4 +44,4 @@ function WoodProduct() {
   )
 }
 
-export default WoodProduct
+export default Biomass

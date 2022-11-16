@@ -23,7 +23,7 @@ const AllProducts = () => {
               </div>
 
               <div className="p-4 md:p-5">
-                <Link to={item.id}>
+                <Link to={`/${item.id}`}>
                   <h3 className="text-lg font-normal uppercase text-gray-800 ">
                     {item.title}
                   </h3>

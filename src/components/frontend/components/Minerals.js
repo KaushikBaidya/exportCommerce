@@ -1,5 +1,5 @@
 import React from 'react'
-import data from '../../../Data/minerels'
+import data from '../../../Data/minerals'
 
 import { Link } from 'react-router-dom'
 import BuyNow from '../../Buynow'

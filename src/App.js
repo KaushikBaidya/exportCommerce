@@ -9,7 +9,7 @@ import SingleProduct from './components/frontend/components/SingleProduct'
 // import Login from "./components/frontend/auth/Login";
 import Dashboard from './components/dashboard/Dashboard'
 import AllProducts from './components/frontend/pages/AllProducts'
-import WoodProduct from './components/frontend/pages/WoodProduct'
+import Biomass from './components/frontend/pages/Biomass'
 import MineralProducts from './components/frontend/pages/MineralProducts'
 // import Register from "./components/frontend/auth/Register";
 // import PrivateRoute from "./components/frontend/auth/Protected";
@@ -34,7 +34,7 @@ function App() {
           <Route element={<Layout />}>
             <Route exact path="/" element={<Landing />} />
             <Route exact path="/allProducts" element={<AllProducts />} />
-            <Route exact path="/woodProducts" element={<WoodProduct />} />
+            <Route exact path="/biomass" element={<Biomass />} />
             <Route
               exact
               path="/mineralProducts"
@@ -42,6 +42,7 @@ function App() {
             />
             {/* <Route exact path="/#seeAbout" element={<Landmark />} /> */}
             <Route exact path="/:id" element={<SingleProduct />} />
+            <Route exact path="/allProducts/:id" element={<SingleProduct />} />
             {/* <Route exact path="/login" element={<Login />} /> */}
             {/* <Route exact path="/register" element={<Register />} /> */}
           </Route>

@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
-import data from "../../../Data/wood";
-import { useParams } from "react-router-dom";
-import Buynow from "../../Buynow";
-import { useTranslation } from "react-i18next";
+import React, { useEffect, useState } from 'react'
+import data from '../../../Data/Data'
+import { useParams } from 'react-router-dom'
+import Buynow from '../../Buynow'
+import { useTranslation } from 'react-i18next'
 
 const SingleProduct = () => {
-  const { t } = useTranslation(["product"]);
-  const { id } = useParams();
-  const [singleProduct, setSingleProduct] = useState({});
+  const { t } = useTranslation(['product'])
+  const { id } = useParams()
+  const [singleProduct, setSingleProduct] = useState({})
 
   useEffect(() => {
-    const findProduct = data.find((product) => product.id === id);
-    setSingleProduct(findProduct);
-  }, [id]);
+    const findProduct = data.find((product) => product.id === id)
+    setSingleProduct(findProduct)
+  }, [id])
 
   return (
     <div className="w-full grid content-center justify-items-center py-20">
@@ -34,37 +34,37 @@ const SingleProduct = () => {
         <table className="table-auto border-separate border-spacing-8 ">
           <thead>
             <tr>
-              <th>{t("tb1")}</th>
-              <th>{t("tb1")}</th>
+              <th>{t('tb1')}</th>
+              <th>{t('tb1')}</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>{t("tb3")}</td>
-              <td>{t("d1")}</td>
+              <td>{t('tb3')}</td>
+              <td>{t('d1')}</td>
             </tr>
             <tr>
-              <td>{t("tb4")}</td>
+              <td>{t('tb4')}</td>
               <td>6mm or 8mm or 90mm</td>
             </tr>
             <tr>
-              <td>{t("tb5")}</td>
+              <td>{t('tb5')}</td>
               <td>30 - 50mm</td>
             </tr>
             <tr>
-              <td>{t("tb6")}</td>
+              <td>{t('tb6')}</td>
               <td> {`< 10%`} </td>
             </tr>
             <tr>
-              <td>{t("tb7")}</td>
+              <td>{t('tb7')}</td>
               <td> {`< 4%`} </td>
             </tr>
             <tr>
-              <td>{t("tb8")}</td>
+              <td>{t('tb8')}</td>
               <td> 4300-4800 kcal/kg </td>
             </tr>
             <tr>
-              <td>{t("tb9")}</td>
+              <td>{t('tb9')}</td>
               <td> 730kg/m3 </td>
             </tr>
           </tbody>
@@ -74,7 +74,7 @@ const SingleProduct = () => {
         <Buynow title={singleProduct.title} />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SingleProduct;
+export default SingleProduct
